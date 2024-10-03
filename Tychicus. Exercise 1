@@ -1,0 +1,16 @@
+//program to offer a customer a loan if they qualify
+#include<stdio.h>
+#include<math.h>
+int main(){
+float i;
+int a;
+printf("Enter age,annual income=",a,i);
+scanf("%d,%f,",&a,&i);
+ if(a>= 21 & i>=21000) {
+printf("Congratulations you qualify for a loan");
+}
+else {
+printf("Unfortunately,we are unable to offer you aloan at this time");
+}
+return 0;
+}

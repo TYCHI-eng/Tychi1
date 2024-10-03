@@ -1,0 +1,32 @@
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float DO,FA,FR;
+int BI,DD,RD;
+printf("Enter Book Id,Due date and Return date=",BI,DD,RD);
+scanf("%d,%d,%d",&BI,&DD,&RD);
+DO=(RD-DD);
+if (DO <=7)
+{
+FR=20;
+}
+else if (DO <=14)
+{
+FR=50;
+}
+else
+{
+FR=100;
+}
+FA=FR*DO;
+printf("\nBook Id %d",BI);
+printf("\nDue Date %d",DD);
+printf("\nReturn Date%d",RD);
+printf("\nOverdue%.2f",DO);
+printf("\nFine Rate%.2f",FR);
+printf("\nFine Amount%.2f",FA);
+
+return 0;
+}
